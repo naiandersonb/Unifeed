@@ -1,0 +1,47 @@
+.author {
+  max-width: 223px;
+  max-height: 66px;
+
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: max-content max-content;
+  gap: 10px;
+
+  grid-template-areas:
+    'avatar name'
+    'avatar office';
+
+  .author-avatar {
+    grid-area: avatar;
+    width: 100%;
+
+    display: grid;
+    place-content: center;
+
+    img {
+      max-width: 63px;
+      max-height: 63px;
+    }
+  }
+
+  .author-name,
+  .author-office {
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  .author-name {
+    grid-area: name;
+    align-self: flex-end;
+    line-height: .8em;
+    align-self: flex-end;
+  }
+
+  .author-office {
+    align-self: flex-start;
+    grid-area: office;
+    color: #656565;
+  }
+
+
+}

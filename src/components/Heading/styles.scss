@@ -1,0 +1,10 @@
+.heading-title {
+  width: 100%;
+  font-size: 2.25em;
+  font-weight: 700;
+  line-height: 150%;
+
+  @media (max-width: 960px) {
+    font-size: 2em;
+  }
+}

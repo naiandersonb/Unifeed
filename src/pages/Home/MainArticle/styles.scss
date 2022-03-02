@@ -1,0 +1,25 @@
+.main-article-Section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 4.5em;
+
+  .article-content-subtitle {
+    color: #656565;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    padding: .8em 0;
+  }
+
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 244px 1fr;
+    gap: 2.5em;
+
+    .img-container {
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+  }
+}

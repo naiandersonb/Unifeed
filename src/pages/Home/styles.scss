@@ -1,0 +1,42 @@
+.home {
+  width: 100%;
+
+  .container {
+    max-width: 1133px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+
+    display: grid;
+    gap: 6.4em;
+    grid-template-rows: 100px max-content 1fr;
+    grid-template-areas:
+      'header'
+      'main_article'
+      'posts';
+
+    @media(max-width: 1133px) {
+      padding: 0 1em;
+    }
+
+    @media(max-width: 355px) {
+      padding: 0 .5em;
+    }
+
+    .header {
+      width: 100%;
+      grid-area: header;
+    }
+
+    .main-article {
+      width: 100%;
+      grid-area: main_article;
+    }
+
+    .posts {
+      width: 100%;
+      grid-area: posts;
+
+    }
+  }
+}

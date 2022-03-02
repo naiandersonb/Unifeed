@@ -1,0 +1,36 @@
+.card-post {
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: max-content 180px max-content;
+  gap: 1em;
+
+  .card-post-img {
+    img {
+      width: 100%;
+    }
+  }
+
+  .card-post-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    .subtitle {
+      color: #656565;
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+  }
+
+  @media(max-width: 652px) {
+    grid-template-rows: max-content 120px max-content;
+    margin-bottom: 2em;
+  }
+
+  @media(max-width: 532px) {
+    grid-template-rows: repeat(3, max-content);
+    margin-bottom: 2em;
+  }
+
+}
